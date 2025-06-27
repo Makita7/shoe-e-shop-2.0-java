@@ -1,4 +1,4 @@
-package com.makita.shoe_shop.entity;
+package com.makita.shoe_shop.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

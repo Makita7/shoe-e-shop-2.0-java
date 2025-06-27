@@ -1,4 +1,4 @@
-package com.makita.shoe_shop.entity;
+package com.makita.shoe_shop.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,27 +6,27 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.util.List;
 import java.util.UUID;
 
-@Entity(name = "CLIENT_ENTITY")
+@Entity(name = "ORDER_ENTITY")
 @Setter
 @Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientEntity {
+public class OrderEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID orderNum;
 
-    private String name;
+    private UUID clientId;
 
-    private long phoneNumber;
+    private List<String> products;
 
-    private int age;
-
-    private String genre;
+    private double total;
 
     private AddressEntity address;
+
 }
