@@ -30,3 +30,5 @@ This is the backend API for a shoe e-commerce site, built with **Java**, **Sprin
 
 ## 📦 Project Structure
 
+https://dbdiagram.io/d/shoe-shop-685ed91ff413ba35083d060e
+
